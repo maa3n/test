@@ -388,16 +388,6 @@ footer.footer .move-up span:hover {
 }
 
 /*------XXX------Footer----XXX------*/
-/*---viewport less then or Equal to 750px ---*/
-@media only screen and (max-width: 750px) {
-  .nav .nav-menu,
-  .nav-items {
-    flex-direction: column;
-  }
-  .nav .toggle-collapse {
-    display: initial;
-  }
-}
 
 /*---X----viewport less then or Equal to 750px ----X----*/
 
@@ -407,15 +397,42 @@ main .res iframe {
   width: 940px;
   height: 1300px;
 }
+main .site-title .register {
+  padding-bottom: 1250px;
+}
+
+.register {
+  height: 750px;
+}
+/*.res {
+  position: absolute;
+  top: 60%;
+  text-align: center;
+} */
 
 /***** test for maps AND LOCATION ******/
 
 main .map {
-  display: flex;
+  /* display: flex; */
 
-  width: 80%;
+  width: 600px;
   margin: 2rem 2rem;
   box-shadow: 0 15px 20px rgb(0, 0, 0.2);
+}
+.location {
+  padding-top: 200px;
+  height: 300px;
+}
+
+/*---viewport less then or Equal to 750px ---*/
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav-items {
+    flex-direction: column;
+  }
+  .nav .toggle-collapse {
+    display: initial;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -428,13 +445,14 @@ main .map {
     height: 1300px;
   }
   main .map iframe {
-    width: 390px;
+    width: 350px;
     height: 400px;
   }
   .nav .toggle-collapse {
     display: initial;
   }
 }
+
 /*********************************/
 @media only screen and (max-width: 1130px) {
   .site-content .post-content > .post-image .post-info {
